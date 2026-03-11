@@ -676,7 +676,7 @@ body{
 }
 
 .integration h2{
-  font-size:32px;
+  font-size:2.5rem;
   font-weight:600;
   margin-bottom:10px;
 }
@@ -695,12 +695,14 @@ body{
   gap:20px;
   justify-content:center;
   flex-wrap:wrap;
-  background-color: #fff8f8;
+    background:linear-gradient(135deg,#efe5e4,#ffeee5,#fffffe);
+
 }
 
 .card{
-  background:#ffeded;
+ 
   padding:25px;
+  margin-top: 50px;
   border-radius:15px;
   width:300px;
   box-shadow:0 10px 20px rgba(0,0,0,0.05);
@@ -709,7 +711,8 @@ body{
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-20px);
+
 }
 
 .card h3{
@@ -735,7 +738,7 @@ body{
   margin-bottom: 30px;
   padding:12px 28px;
   border:none;
-  background:#ff7a30;
+  background:#ef7d13;
   color:#fff;
   border-radius:25px;
   box-shadow: 5px 5px 5px  gainsboro;
