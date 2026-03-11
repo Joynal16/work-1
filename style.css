@@ -597,8 +597,8 @@ body{
 
 .section-6{
   width: 1190px;
-  height: 800px;
-  
+  height: 900px;
+  border-radius: 20px;
   margin: 0 auto;
   background-color: #555;
    background:linear-gradient(135deg,#ddbea3,#ff5f00,#ddbea3);
@@ -648,5 +648,96 @@ body{
 
 .f-1 #s-2{
     color: #ff5c35;
+
+}
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+.integration{
+  max-width: 1180px;
+  padding:80px 20px;
+  text-align:center;
+  margin: 0 auto;
+  border-radius: 30px;
+  background:linear-gradient(135deg,#ef7d1a,#ffeee5,#fffffe);
+  margin-top: 20px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.integration h2{
+  font-size:32px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.integration h2 span{
+  color:#ff7a30;
+}
+
+.subtitle{
+  color:#666;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  background-color: #fff8f8;
+}
+
+.card{
+  background:#ffeded;
+  padding:25px;
+  border-radius:15px;
+  width:300px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+  text-align:left;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#666;
+  font-size:14px;
+}
+
+.btn{
+  margin-top:40px;
+  padding:12px 28px;
+  border:none;
+  background:#ef7d13;
+  color:#fff;
+  border-radius:25px;
+  cursor:pointer;
+}
+.btn-ls{
+  margin-top:40px;
+  margin-bottom: 30px;
+  padding:12px 28px;
+  border:none;
+  background:#ff7a30;
+  color:#fff;
+  border-radius:25px;
+  box-shadow: 5px 5px 5px  gainsboro;
 
 }
