@@ -1,72 +1,240 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
+
+
+.section-7{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #0a4b70;
 }
 
-.integration{
-  padding:80px 20px;
-  background:linear-gradient(180deg,#f8e1d8,#f4f4f4);
-  text-align:center;
-}
 
-.container{
-  max-width:1100px;
-  margin:auto;
-}
 
-.integration h2{
-  font-size:32px;
-  font-weight:600;
-  margin-bottom:10px;
-}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.integration h2 span{
-  color:#ff7a30;
-}
+        body {
+            background: linear-gradient(145deg, #f6f9fc 0%, #edf2f7 100%);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+        }
 
-.subtitle{
-  color:#666;
-  margin-bottom:40px;
-}
+        /* main card container – matches screenshot layout */
+        .pricing-section {
+            max-width: 1300px;
+            width: 100%;
+        }
 
-.cards{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
+        /* headline exactly as in the image */
+        .section-headline {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
 
-.card{
-  background:#fff;
-  padding:25px;
-  border-radius:15px;
-  width:300px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.05);
-  text-align:left;
-  transition:0.3s;
-}
+        .section-headline h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #0b2b4a, #193e5e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
 
-.card:hover{
-  transform:translateY(-5px);
-}
+        .section-headline p {
+            font-size: 1.2rem;
+            color: #2d4b6e;
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.6);
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 8px rgba(0,20,40,0.05);
+        }
 
-.card h3{
-  margin-bottom:10px;
-}
+        /* 4‑card grid — responsive */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
 
-.card p{
-  color:#666;
-  font-size:14px;
-}
+        /* card styles */
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 70, 120, 0.12);
+            border-radius: 32px;
+            padding: 1.8rem 1.5rem 1.8rem 1.5rem;
+            box-shadow: 0 20px 30px -10px rgba(0, 45, 70, 0.15), 0 4px 8px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            color: #0c2c44;
+        }
 
-.btn{
-  margin-top:40px;
-  padding:12px 28px;
-  border:none;
-  background:#ff7a30;
-  color:#fff;
-  border-radius:25px;
-  cursor:pointer;
-}
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 36px -12px rgba(6, 60, 100, 0.25);
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(0, 110, 190, 0.25);
+        }
+
+        /* card header */
+        .card-header {
+            margin-bottom: 1.2rem;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            line-height: 1.2;
+            color: #0f3a5c;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* subtle badge only for wheelchair plan (unique name) */
+        .wheelchair-badge {
+            background: #18577e;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 40px;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .plan-desc {
+            font-size: 0.9rem;
+            color: #3d607b;
+            margin-top: 0.25rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .price-block {
+            margin: 1.2rem 0 1.2rem;
+            background: rgba(230, 241, 250, 0.7);
+            padding: 0.7rem 1rem;
+            border-radius: 24px;
+            border: 1px solid rgba(60, 130, 190, 0.2);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0e3f62;
+            display: flex;
+            align-items: baseline;
+            gap: 0.2rem;
+        }
+
+        .price small {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #467594;
+            margin-left: 0.15rem;
+        }
+
+        .price-note {
+            font-size: 0.85rem;
+            color: #2d6286;
+            margin-top: 0.2rem;
+            font-weight: 450;
+            border-top: 1px dashed rgba(0,90,130,0.15);
+            padding-top: 0.4rem;
+        }
+
+        /* feature list — mimics screenshot's bullet-like rows */
+        .feature-list {
+            list-style: none;
+            margin: 1.2rem 0 1.6rem;
+            flex-grow: 1;
+        }
+
+        .feature-list li {
+            font-size: 0.94rem;
+            padding: 0.45rem 0 0.45rem 1.4rem;
+            position: relative;
+            color: #1e405b;
+            line-height: 1.35;
+            border-bottom: 1px solid rgba(0,55,90,0.05);
+        }
+
+        .feature-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #1976b0;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1;
+            top: 0.2rem;
+        }
+
+        /* “Subscriber fees” label (exactly as on screenshot) */
+        .subscriber-label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: #1f5982;
+            margin: 0.8rem 0 0.4rem;
+            border-left: 3px solid #1976b0;
+            padding-left: 0.5rem;
+        }
+
+        /* special for the included minutes / numbers line (like first feature row) */
+        .minutes-row {
+            font-weight: 500;
+            background: rgba(0,80,130,0.02);
+            border-radius: 12px;
+            padding: 0.2rem 0 0.2rem 0;
+        }
+
+        /* unlimited specifics — keep clean */
+        .feature-list .unlimited {
+            color: #0a4b70;
+            font-weight: 470;
+        }
+
+        /* save button style (identical to screenshot) */
+        .save-button {
+            background: transparent;
+            border: 1.5px solid #1976b0;
+            color: #1976b0;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px;
+            cursor: default;
+            width: fit-content;
+            transition: 0.15s;
+            margin-top: 0.8rem;
+            text-align: center;
+            background: rgba(25, 118, 176, 0.02);
+            align-self: center;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 0.2px;
+        }
+
+        .save-button:hover {
+            background: #e5f0f9;
+            border-color: #0f5f94;
+            color: #0f5f94;
+        }
