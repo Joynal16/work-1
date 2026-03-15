@@ -985,3 +985,68 @@ body{
             color: #945f0f;
         }
        
+.map-section {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.highlight {
+  color: #ff5722; /* The orange color in your image */
+}
+
+.map-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.btn-primary {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.faq-section {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #efefef;
+  padding: 60px 20px;
+}
+
+.faq-card {
+  max-width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
