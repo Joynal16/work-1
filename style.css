@@ -347,9 +347,9 @@ body { font-family: 'Inter', sans-serif; background-color: #fff; }
 
 .first-1 #lan{
   background: -webkit-linear-gradient(-185deg,#ffcc80, #ff5c35);
+  background: linear-gradient(-185deg,#ffcc80, #ff5c35);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-radius: 20px;
+  background-clip: text;
   
 }
 
@@ -793,6 +793,7 @@ body{
             background: rgba(255,255,255,0.6);
             padding: 0.5rem 1.5rem;
             border-radius: 40px;
+            -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
             box-shadow: 0 2px 8px rgba(0,20,40,0.05);
         }
@@ -809,6 +810,7 @@ body{
         /* card styles */
         .pricing-card {
             background: rgba(161, 119, 61, 0.85);
+            -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(0, 70, 120, 0.12);
             border-radius: 32px;
@@ -832,8 +834,20 @@ body{
             background: rgba(0, 0, 0, 0.95);
             border-color: rgba(0, 110, 190, 0.25);
         }
-        
-        
+
+        .pricing-note {
+            text-align: center;
+            margin-top: 2.5rem;
+            color: #376582;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            border-top: 1px dashed rgba(0,80,130,0.2);
+            padding-top: 1.5rem;
+        }
+
+        .check-black { color: rgb(0, 0, 0); }
+        .check-dark { color: rgb(23, 19, 15); }
+        .check-warning { color: rgb(255, 154, 59); }
 
         /* card header */
         .card-header {
