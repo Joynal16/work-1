@@ -1,84 +1,89 @@
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
+:root {
+    --text-main: #333;
+    --text-muted: #666;
+    --accent-orange: #ff6b35;
 }
 
-.newsletter-section {
-    background: radial-gradient(circle at center, #2a1a15 0%, #0a0a0a 100%);
-    color: #ffffff;
-    padding: 100px 20px;
-    text-align: center;
-}
 
-.container {
-    max-width: 800px;
+
+/* The wrapper creates the orange-ish glowing border effect */
+.footer-wrapper {
+    background: linear-gradient(to right, #ff6b35, #222);
+    padding: 2px; /* Border thickness */
+    border-radius: 40px;
+    width: 1000px;
     margin: 0 auto;
 }
 
-.badge {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #a5a5a5;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.footer-container {
+    background: #fff;
+    border-radius: 38px;
+    padding: 60px 50px 30px;
 }
 
-h1 {
-    font-size: 42px;
-    margin: 20px 0;
-    font-weight: 600;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
 }
 
-h1 span {
-    color: #ff6b35; /* The orange accent */
-}
+/* Brand Section */
+.logo { height: 30px; margin-bottom: 20px; }
 
-p {
-    color: #a5a5a5;
+.brand-col p {
+    font-size: 14px;
+    color: var(--text-muted);
     line-height: 1.6;
-    margin-bottom: 40px;
-    font-size: 16px;
+    max-width: 300px;
 }
 
-/* The Input Pill */
-.input-group {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 8px;
-    border-radius: 50px;
+.social-icons { display: flex; gap: 10px; margin-top: 20px; }
+
+.social-icons .icon {
+    width: 32px;
+    height: 32px;
+    background: #fff5f2;
+    color: var(--accent-orange);
     display: flex;
     align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.envelope-icon {
-    padding: 0 15px;
-    color: #a5a5a5;
+/* Link Columns */
+.footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--text-main);
 }
 
-input {
-    background: transparent;
-    border: none;
-    color: white;
-    flex-grow: 1;
-    padding: 10px;
-    outline: none;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
 }
 
-button {
-    background: #ff6b35;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 40px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+.footer-col ul li { margin-bottom: 12px; }
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 13px;
+    transition: color 0.2s;
 }
 
-button:hover {
-    background: #e55a2a;
+.footer-col ul li a:hover { color: var(--accent-orange); }
+
+/* Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 13px;
+    color: var(--text-muted);
 }
+
+.highlight { color: var(--accent-orange); font-weight: 500; }
+
