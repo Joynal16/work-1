@@ -748,7 +748,7 @@ body{
 
 
 .section-7{
-  width: 1200px;
+  width: 1190px;
   height: auto;
   margin: 0 auto;
   background: linear-gradient(#FDF5EF,#ff7a05,#ff6a00);
@@ -1071,3 +1071,82 @@ body{
 .container>h1{
   font-size: 2.5rem;
 }
+
+
+
+
+
+
+
+
+.newsletter-section {
+    background: radial-gradient(circle at center, #2a1a15 0%, #0a0a0a 100%);
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+    border-radius: 40px;
+}
+
+.containerss {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.badges {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #a5a5a5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.h {
+    font-size: 42px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.h #sss {
+    color: #ff6b35; /* The orange accent */
+}
+
+.lss {
+    color: #a5a5a5;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* The Input Pill */
+.input-groups {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.envelope-icon {
+    padding: 0 15px;
+    color: #a5a5a5;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: white;
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+}
+
+
+
+

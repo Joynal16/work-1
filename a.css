@@ -1,58 +1,84 @@
-.map-section {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #fff;
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
 }
 
-.highlight {
-  color: #ff5722; /* The orange color in your image */
+.newsletter-section {
+    background: radial-gradient(circle at center, #2a1a15 0%, #0a0a0a 100%);
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-.map-container {
-  position: relative;
-  max-width: 1000px;
-  margin: 40px auto;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.btn-primary {
-  background-color: #ff5722;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-.faq-section {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #a5a5a5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.faq-card {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    font-weight: 600;
 }
 
-.faq-item {
-  border-bottom: 1px solid #eee;
-  padding: 20px 0;
+h1 span {
+    color: #ff6b35; /* The orange accent */
 }
 
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
-  cursor: pointer;
+p {
+    color: #a5a5a5;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 16px;
 }
 
-.faq-answer {
-  margin-top: 15px;
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.6;
+/* The Input Pill */
+.input-group {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.envelope-icon {
+    padding: 0 15px;
+    color: #a5a5a5;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: white;
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+}
+
+button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e55a2a;
 }
