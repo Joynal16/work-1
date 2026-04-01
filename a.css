@@ -1,89 +1,59 @@
-:root {
-    --text-main: #333;
-    --text-muted: #666;
-    --accent-orange: #ff6b35;
-}
 
 
-
-/* The wrapper creates the orange-ish glowing border effect */
-.footer-wrapper {
-    background: linear-gradient(to right, #ff6b35, #222);
-    padding: 2px; /* Border thickness */
-    border-radius: 40px;
-    width: 1000px;
+.faq-container {
+    max-width: 600px;
     margin: 0 auto;
-}
-
-.footer-container {
-    background: #fff;
-    border-radius: 38px;
-    padding: 60px 50px 30px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #eee;
-}
-
-/* Brand Section */
-.logo { height: 30px; margin-bottom: 20px; }
-
-.brand-col p {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    max-width: 300px;
-}
-
-.social-icons { display: flex; gap: 10px; margin-top: 20px; }
-
-.social-icons .icon {
-    width: 32px;
-    height: 32px;
-    background: #fff5f2;
-    color: var(--accent-orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    text-decoration: none;
-    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Link Columns */
-.footer-col h4 {
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: var(--text-main);
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li { margin-bottom: 12px; }
-
-.footer-col ul li a {
-    text-decoration: none;
-    color: var(--text-muted);
-    font-size: 13px;
-    transition: color 0.2s;
-}
-
-.footer-col ul li a:hover { color: var(--accent-orange); }
-
-/* Bottom Bar */
-.footer-bottom {
+h1 {
+    color: #333;
     text-align: center;
-    padding-top: 30px;
-    font-size: 13px;
-    color: var(--text-muted);
 }
 
-.highlight { color: var(--accent-orange); font-weight: 500; }
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
 
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    list-style: none; /* Removes default bullet point/triangle */
+}
+
+/* Add a custom arrow icon appearance */
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '+';
+    float: right;
+    transition: transform 0.3s;
+}
+
+.faq-item[open] .faq-question::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 10px 0 0;
+    color: #666;
+    margin: 0;
+}
+
+/* Optional: Add a smooth transition for opening/closing - might need JS for smooth height animation */
+.faq-item[open] .faq-answer {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
