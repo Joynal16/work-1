@@ -1007,7 +1007,90 @@ body{
             border-color: #0f5f94;
             color: #945f0f;
         }
-       
+
+
+.section-8{
+  width: 1190px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.new2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+#com{
+  margin-top: 1.4rem;
+  padding: 10px 16px;
+}
+
+
+:root {
+  --bg-color: #fcfcfc;
+  --card-bg: #ffffff;
+  --text-main: #333;
+  --text-sub: #666;
+  --border-radius: 24px;
+}
+
+
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-sub);
+  margin-bottom: 20px;
+}
+
+/* Mockup Placeholders */
+.mockup-img, .mockup-img-large {
+  background: #f9f9f9;
+  border-radius: 12px;
+  flex-grow: 1;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #ddd;
+}
+
+
+
 .map-section {
   width: 1200px;
   height: auto;
