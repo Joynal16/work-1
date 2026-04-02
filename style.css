@@ -1408,7 +1408,7 @@ input {
 
 
 
-@media (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px){
   nav{
     padding: 20px;
   }
@@ -1441,6 +1441,6 @@ input {
   }
    .section-2{
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
   }
 }
