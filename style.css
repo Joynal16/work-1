@@ -1412,6 +1412,11 @@ input {
   nav{
     padding: 20px;
   }
+  .logo>img{
+    width: 100px;
+    height: 90px;
+     margin-left: 150px;
+  }
   .second-div{
     display: none;
   }
@@ -1429,7 +1434,7 @@ input {
     padding: 20px;
   }
   .section-1>button{
-    margin-left: 150px;
+    margin-left: 120px;
   }
   .second-div{
     margin: 20px;
