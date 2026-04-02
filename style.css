@@ -1294,7 +1294,7 @@ input {
 
 :root {
     --text-main: #333;
-    --text-muted: #666;
+    --text-muted: #c2b9b9;
     --accent-orange: #ff6b35;
 }
 
@@ -1302,7 +1302,7 @@ input {
 
 /* The wrapper creates the orange-ish glowing border effect */
 .footer-wrapper {
-    background: linear-gradient(to right, #ff6b35, #222);
+    background: linear-gradient(to right, #ff6b35, #a3560d);
     padding: 2px; /* Border thickness */
     border-radius: 40px;
     width: 1150px;
@@ -1310,9 +1310,10 @@ input {
 }
 
 .footer-container {
-    background: #fff;
     border-radius: 38px;
-    padding: 60px 50px 30px;
+    padding: 60px 60px 10px;
+    
+    
 }
 
 .footer-grid {
@@ -1321,6 +1322,7 @@ input {
     gap: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #eee;
+
 }
 
 /* Brand Section */
@@ -1328,12 +1330,18 @@ input {
 
 .brand-col p {
     font-size: 14px;
-    color: var(--text-muted);
+    color: white;
     line-height: 1.6;
     max-width: 300px;
+    
 }
 
-.social-icons { display: flex; gap: 10px; margin-top: 20px; }
+.social-icons {
+   display: flex;
+   gap: 10px; 
+   margin-top: 20px; 
+   
+}
 
 .social-icons .icon {
     width: 32px;
@@ -1350,21 +1358,27 @@ input {
 
 /* Link Columns */
 .footer-col h4 {
-    font-size: 15px;
+    font-size: 1.1rem;
     margin-bottom: 20px;
-    color: var(--text-main);
+    color: white;
+    margin-top: 70px;
 }
 
 .footer-col ul {
     list-style: none;
+    
     padding: 0;
+}
+
+.footer-col{
+  margin-left: 90px;
 }
 
 .footer-col ul li { margin-bottom: 12px; }
 
 .footer-col ul li a {
     text-decoration: none;
-    color: var(--text-muted);
+    color: white;
     font-size: 13px;
     transition: color 0.2s;
 }
@@ -1377,6 +1391,9 @@ input {
     padding-top: 30px;
     font-size: 13px;
     color: var(--text-muted);
+}
+.footer-bottom .fs{
+  color: #f0f0f0;
 }
 
 .highlight { color: var(--accent-orange); font-weight: 500; }
