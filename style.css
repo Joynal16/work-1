@@ -336,7 +336,7 @@ body { font-family: 'Inter', sans-serif; background-color: #fff; }
 }
 .first-1 .host{
   margin: 20px 430px;
-  padding: 12px 19px;
+  padding: 8px 14px;
   font-weight: bold;
 }
 .first-1 .host:hover{
@@ -1402,6 +1402,45 @@ input {
 
 .highlight { color: var(--accent-orange); font-weight: 500; }
 
+.hum>span{
+  display: none;
+}
 
 
 
+@media (max-width: 576px) {
+  nav{
+    padding: 20px;
+  }
+  .second-div{
+    display: none;
+  }
+  .third-div{
+    display: none;
+  }
+  .hum{
+    display: block;
+    margin-left: 20px;
+     background-color: yellowgreen;
+    padding: 6px 12px;
+  }
+  .section-1{
+    margin: 20px;
+    padding: 20px;
+  }
+  .section-1>button{
+    margin-left: 150px;
+  }
+  .second-div{
+    margin: 20px;
+    padding: 20px;
+  }
+   .na{
+    margin: 20px;
+    padding: 20px;
+  }
+   .section-2{
+    margin: 20px;
+    padding: 20px;
+  }
+}
