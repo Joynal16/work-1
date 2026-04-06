@@ -1408,7 +1408,7 @@ input {
 
 
 
-@media (min-width: 350px) and (max-width: 576px){
+@media (max-width: 576px){
   nav{
     padding: 20px;
   }
@@ -1440,13 +1440,30 @@ input {
     margin: 20px;
     padding: 20px;
   }
-   .na{
-    margin: 20px;
+   .na>img{
+    width: 350px;
+    height: auto;
+    margin-left: -5px;
     padding: 20px;
   }
    .section-2{
     margin: 10px;
-    
-    
+  }
+  .voice-ai-section{
+    margin: 20px;
+    padding: 20px;
+  }
+  .main-container{
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+  }
+   .third-sec{
+    margin: 20px;
+    padding: 20px;
+  }
+  .header-text{
+    margin: 20px;
+    padding: 20px;
   }
 }
