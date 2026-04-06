@@ -1449,21 +1449,42 @@ input {
    .section-2{
     margin: 10px;
   }
-  .voice-ai-section{
+  .integration{
     margin: 20px;
     padding: 20px;
   }
-  .main-container{
+  .section-8{
+    margin: 20px;
+    flex-direction: row;
+    
+  }
+  .new2{
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .bento-grid{
+    flex-direction: row;
+  }
+  .section-7{
     margin: 20px;
     padding: 20px;
-    flex-direction: column;
   }
-   .third-sec{
+   .section-6{
     margin: 20px;
     padding: 20px;
   }
-  .header-text{
+  
+   .faq-section{
+    max-width: 550px;
+    margin: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+   } 
+   .newsletter-section{
+    max-width: 550px;
     margin: 20px;
     padding: 20px;
-  }
+   }
+
+  
 }
