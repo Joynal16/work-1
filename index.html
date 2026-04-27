@@ -11,13 +11,18 @@
     <link rel="icon" type="image/png" sizes="48x48" href="./Images/kotha-ai.png">
     <style>
         /* custom overrides for smoothness and glassmorphism */
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .step-transition { transition: all 0.3s ease; }
+         body{ 
+            font-family: 'Inter', sans-serif;
+          } 
+        .step-transition{
+             transition: all 0.3s ease;
+             }
         .hover-scale:hover { transform: translateY(-5px); transition: transform 0.2s ease; }
         .pricing-card-bg { background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(12px); }
         .faq-details-marker summary::-webkit-details-marker { display: none; }
         .faq-details-marker summary { list-style: none; }
     </style>
+    <!-- scroll-behavior: smooth; -->
 </head>
 <body class="bg-white text-gray-900">
 
@@ -530,7 +535,7 @@
     <input 
       type="email" 
       placeholder="Enter your email" 
-      class="bg-transparent text-white placeholder-white flex-1 px-2 outline-none"
+      class="bg-transparent text-white placeholder-white flex-1 py-1 outline-none"
     >
     <button class="bg-orange-500 px-4 py-1 m-1 rounded-full hover:bg-white hover:text-black active:bg-orange-500 transition-colors">
       Subscribe
