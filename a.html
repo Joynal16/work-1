@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,161 +9,237 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
 </head>
 <body>
-     <footer class="max-w-6xl mx-auto px-8   py-16  bg-black text-white text-center rounded-3xl my-5 bg-gradient-to-br from-cyan-900/100 to-teal-400/100">
-            <span class="bg-white text-black px-4 py-2 rounded-full text-sm hover:bg-black hover:text-white active:bg-orange-500">Connect</span>
-            <h2 class="text-4xl font-bold mt-4">Stay connected with <span class="text-orange-500">our news</span></h2>
-            <p class="max-w-xl mx-auto text-white mt-3">Stay up to date with the latest news in phone call automation. Subscribe now to receive exclusive tips and updates.</p>
-            <!-- <div class="flex flex-wrap justify-center mt-10"><div class="bg-white/10 border border-white/20 rounded-full p-[-3px] flex max-w-md"><i class="fa-regular fa-envelope px-4 py-3"></i><input type="email" placeholder="Enter your email" class="bg-transparent/100 text-white  flex-1 px-2"><button class="bg-orange-500 px-4 py-1 m-1 rounded-full hover:bg-white hover:text-black active:bg-orange-500">Subscribe</button></div></div> -->
-                     <div class="flex flex-wrap justify-center mt-10">
-  <div class="bg-white/10 border border-white/20 rounded-full p-[-3px] flex max-w-sm">
-   <i class="fa-regular fa-envelope px-4 py-4 text-white"></i>
-    <input 
-      type="email" 
-      placeholder="Enter your email" 
-      class="bg-transparent max-sm:m-auto text-white placeholder-white flex-1 py-1 outline-none"
-    >
-    <button class="bg-orange-500 px-3 py-1 m-2 rounded-full hover:bg-white hover:text-black active:bg-orange-500 transition-colors">
-      Subscribe
-    </button>
-  </div>
-</div>
+    <nav class="bg-slate-800 sticky top-0 z-50 backdrop-blur-sm shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="./Images/kotha-ai.png" alt="Kotha AI" class="h-12 w-12 md:h-16 md:w-16 object-contain">
+        </div>
 
+        <div class="hidden lg:flex items-center gap-1 bg-gradient-to-r from-white via-cyan-200 to-white p-1 rounded-full shadow-inner">
+            <button class="px-4 py-2 rounded-full font-semibold text-orange-600 bg-white shadow-sm">Home</button>
+            <button class="px-4 py-2 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">Solutions</button>
+            <button class="px-4 py-2 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">Packages</button>
+            <button class="px-4 py-2 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">Industries</button>
+            <button class="px-4 py-2 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">FAQ</button>
+            <button class="px-4 py-2 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">Contact</button>
+        </div>
 
+        <div class="hidden lg:flex items-center gap-3">
+            <button class="px-4 py-2 rounded-full font-medium bg-black text-white hover:bg-blue-500 transition">Login</button>
+            <button class="bg-orange-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-600 transition shadow-md">Request Demo</button>
+        </div>
 
-<div class="bg-gradient-to-br from-cyan-900/100 to-teal-500/100 rounded-3xl p-1 mt-10">
-            <div class="bg-black rounded-3xl p-8 text-white bg-gradient-to-br from-cyan-600/150 to-teal-400/100">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div><img src="./Images/kotha-ai.png" class="h-24 w-24"><p class="text-sm font-semibold text-white mt-3">Create no-code AI phone call agents to automate incoming and outgoing calls.</p><div class="flex gap-2 mt-4"><span class="bg-orange-500 w-8 h-8 rounded flex items-center justify-center">in</span><span class="bg-orange-500 w-8 h-8 rounded flex items-center justify-center">f</span><span class="bg-orange-500 w-8 h-8 rounded flex items-center justify-center">✉</span></div></div>
-                    <div><h4 class="font-extrabold mb-4">Navigate</h4><ul class="space-y-2 text-sm text-white"><li>Company</li><li>About</li><li>Solutions</li><li>Packages</li></ul></div>
-                    <div><h4 class="font-extrabold mb-4">Resources</h4><ul class="space-y-2 text-sm text-white"><li>Support</li><li>FAQ</li><li>Demo</li><li>Status</li></ul></div>
-                </div>
-                <div class="text-center text-white font-medium text-sm mt-10 pt-6 border-t border-gray-800">© 2026 Kotha AI — Intelligent Voice  <span class="text-orange-500">Automation Platform</span><br>System by <b> Variation Communications Ltd.</b></div>
+        <div class="lg:hidden">
+            <button id="mobileMenuBtn" class="text-2xl text-orange-600 bg-gray-100 p-2 rounded-full"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-200 px-5 py-4 flex flex-col gap-2 shadow-lg">
+        <button class="text-left px-3 py-2 rounded-lg font-medium hover:bg-orange-100">Home</button>
+        <button class="text-left px-3 py-2 rounded-lg font-medium hover:bg-orange-100">Solutions</button>
+        <button class="text-left px-3 py-2 rounded-lg font-medium hover:bg-orange-100">Packages</button>
+        <button class="text-left px-3 py-2 rounded-lg font-medium hover:bg-orange-100">Contact</button>
+        <hr class="my-2">
+        <button class="bg-orange-500 text-white text-center px-3 py-2 rounded-full font-semibold">Request Demo</button>
+    </div>
+</nav>
+
+<main class="space-y-12 py-8">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-slate-400 to-teal-200 rounded-3xl shadow-xl p-8 md:p-16 text-center">
+            <button class="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold mb-6">Live Demo</button>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight">Transform Your <span class="text-orange-500">Customer</span><br class="hidden md:block"> Support Operations</h1>
+            <p class="text-black mt-6 max-w-2xl mx-auto text-lg">Kotha AI automates website and phone call support — intelligent, multilingual, 24/7 available.</p>
+            
+            <div class="flex flex-wrap justify-center gap-3 mt-10">
+                <button class="bg-white font-semibold shadow rounded-full px-6 py-3 text-sm flex items-center gap-2 hover:bg-black hover:text-white transition"><i class="fa-solid fa-envelope"></i> Enter email</button>
+                <button class="bg-orange-500 font-semibold text-white rounded-full px-6 py-3 text-sm flex items-center gap-2 shadow hover:bg-black transition"><i class="fa-solid fa-phone"></i> Side to call</button>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="./Images/vivo-mobile-phone.png" alt="demo" class="rounded-2xl max-w-full h-auto md:w-2/3">
             </div>
         </div>
-     </footer>
+    </section>
 
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-slate-300 to-teal-500/50 rounded-3xl p-8 md:p-16">
+            <div class="text-center mb-12">
+                <span class="bg-white text-black font-medium px-4 py-2 rounded-full text-sm uppercase tracking-wider">How it works</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-6">Natural Voice. Instant Action.</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-10">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold">Natural Language Understanding</h3>
+                            <p class="text-gray-700 mt-2">Let AI handle routine support so your team focuses on high-value strategy.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold">Instant Response</h3>
+                            <p class="text-gray-700 mt-2">Zero wait times for appointments, reminders, and customer queries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="Images/iphones.png" alt="Phone" class="rounded-2xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-cyan-100 to-teal-400 rounded-3xl p-8 md:p-16 border-8 border-white shadow-lg text-center">
+            <button class="bg-white border border-orange-300 px-6 py-2 rounded-full font-semibold mb-6">Explore Global Capability</button>
+            <h2 class="text-3xl md:text-4xl font-bold">AI Voice Support <span class="text-orange-600">Without Limits</span></h2>
+            <div class="grid md:grid-cols-2 gap-8 mt-12 items-center">
+                <ul class="space-y-4 text-left max-w-sm mx-auto md:mx-0">
+                    <li class="font-semibold flex items-center"><i class="fa-solid fa-check text-orange-500 mr-3"></i> Bangla & English Ready</li>
+                    <li class="font-semibold flex items-center"><i class="fa-solid fa-check text-orange-500 mr-3"></i> 40+ Language Support</li>
+                    <li class="font-semibold flex items-center"><i class="fa-solid fa-check text-orange-500 mr-3"></i> Scalable Cloud Infrastructure</li>
+                </ul>
+                <img src="./Images/map-new.png" alt="map" class="rounded-xl w-full">
+            </div>
+        </div>
+    </section>
 
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-cyan-900 to-slate-900 rounded-3xl p-8 md:p-16 text-white">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">Flexible Plans for <span class="text-orange-500">Every Business</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:scale-105 transition-transform">
+                    <span class="text-green-400 font-bold uppercase text-xs">Startups</span>
+                    <h3 class="text-2xl font-bold mt-2">🟢 কথা শুরু</h3>
+                    <div class="text-4xl font-bold my-6">$34 <span class="text-lg font-normal text-gray-400">/mo</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li>✓ 100 included minutes</li>
+                        <li>✓ 1 AI Assistant</li>
+                        <li>✓ 24/7 Availability</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-xl bg-orange-500 font-bold hover:bg-white hover:text-black transition">Get Started</button>
+                </div>
+                </div>
+        </div>
+    </section>
+</main>
 
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="max-w-6xl mx-auto px-4 sm:px-8 py-12 sm:py-16  text-white text-center rounded-3xl my-5 bg-gradient-to-br from-cyan-900/100 to-teal-400/100">
-  <!-- Top Section: CTA -->
-  <span class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-black hover:text-white active:bg-orange-500 transition-colors cursor-pointer">
-    Connect
-  </span>
-  <h2 class="text-3xl sm:text-4xl font-bold mt-4 leading-tight">
-    Stay connected with <span class="text-orange-500">our news</span>
-  </h2>
-  <p class="max-w-xl mx-auto text-gray-100 mt-3 px-4">
-    Stay up to date with the latest news in phone call automation. Subscribe now to receive exclusive tips and updates.
-  </p>
-
-  <!-- Email Subscription Form -->
-  <div class="flex justify-center mt-10 px-4">
-    <div class="bg-white/10 border border-white/20 rounded-full flex items-center w-full max-w-md overflow-hidden p-1">
-      <i class="fa-regular fa-envelope pl-4 pr-2 text-white hidden xs:block"></i>
-      <input 
-        type="email" 
-        placeholder="Enter your email" 
-        class="bg-transparent text-white placeholder-white/70 flex-1 px-3 py-2 outline-none text-sm min-w-0"
-      >
-      <button class="bg-orange-500 px-5 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-black active:bg-orange-500 transition-all">
-        Subscribe
-      </button>
+<footer class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <div class="bg-gradient-to-br from-cyan-900 to-teal-700 rounded-3xl p-8 md:p-16 text-white text-center">
+        <h2 class="text-3xl font-bold mb-6">Stay connected with <span class="text-orange-500">our news</span></h2>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+            <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-3 rounded-full bg-white/10 border border-white/20 outline-none">
+            <button class="bg-orange-500 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">Subscribe</button>
+        </div>
+        <div class="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6">
+            <img src="./Images/kotha-ai.png" alt="Logo" class="h-12">
+            <p class="text-sm text-gray-300">© 2026 Kotha AI — Intelligent Voice Automation</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-orange-500 transition">Solutions</a>
+                <a href="#" class="hover:text-orange-500 transition">FAQ</a>
+                <a href="#" class="hover:text-orange-500 transition">Privacy</a>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!-- Links Grid Section -->
-  <div class="bg-gradient-to-br from-cyan-500/100 to-teal-400/100 rounded-3xl p-[1px] mt-16">
-    <div class="rounded-3xl p-6 sm:p-10 text-white bg-gradient-to-br from-cyan-700/100 to-teal-500/100">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-left">
-        
-        <!-- Brand Info -->
-        <div class="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <img src="./Images/kotha-ai.png" alt="Kotha AI Logo" class="h-auto w-32 mb-4">
-          <p class="text-sm text-white leading-relaxed">
-            Create no-code AI phone call agents to automate incoming and outgoing calls.
-          </p>
-          <div class="flex gap-3 mt-6">
-            <a href="#" class="bg-blue-500 w-9 h-9 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">in</a>
-            <a href="#" class="bg-blue-500 w-9 h-9 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">f</a>
-            <a href="#" class="bg-red-400/100 w-9 h-9 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">✉</a>
-          </div>
-        </div>
-
-        <!-- Navigation -->
-        <div>
-          <h4 class="font-bold mb-4 text-white uppercase tracking-wider text-xs">Navigate</h4>
-          <ul class="space-y-3 text-sm text-white">
-            <li class="hover:text-white cursor-pointer transition-colors">Company</li>
-            <li class="hover:text-white cursor-pointer transition-colors">About</li>
-            <li class="hover:text-white cursor-pointer transition-colors">Solutions</li>
-            <li class="hover:text-white cursor-pointer transition-colors">Packages</li>
-          </ul>
-        </div>
-
-        <!-- Resources -->
-        <div>
-          <h4 class="font-bold mb-4 text-white uppercase tracking-wider text-xs">Resources</h4>
-          <ul class="space-y-3 text-sm text-white">
-            <li class="hover:text-white cursor-pointer transition-colors">Support</li>
-            <li class="hover:text-white cursor-pointer transition-colors">FAQ</li>
-            <li class="hover:text-white cursor-pointer transition-colors">Demo</li>
-            <li class="hover:text-white cursor-pointer transition-colors">Status</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="text-center text-white  text-xs sm:text-sm mt-16 pt-8 border-t border-white/50">
-        <p>© 2026 Kotha AI — <span class="text-orange-500">Intelligent Voice Automation Platform</span></p>
-        <p class="mt-2 text-white">System by <b class="text-gray-300">Variation Communications Ltd.</b></p>
-      </div>
-    </div>
-  </div>
 </footer>
+<main class="space-y-12 md:space-y-20 py-10">
+    
+    <section class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="bg-gradient-to-br from-slate-400 to-teal-200 rounded-[2rem] shadow-xl p-8 md:p-16 text-center">
+            <button class="bg-white text-black hover:bg-black hover:text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 transition-all">Live Demo</button>
+            <h1 class="text-3xl md:text-6xl font-extrabold leading-tight">Transform Your <span class="text-orange-500">Customer</span> Support Operations<br class="hidden md:block"> with Scalable AI Voice Agents</h1>
+            <p class="text-slate-800 mt-6 max-w-2xl mx-auto text-lg">Kotha AI automates website and phone call support — intelligent, multilingual, 24/7 available.</p>
+            
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 mt-10">
+                <div class="relative flex-grow max-w-xs mx-auto sm:mx-0">
+                    <input type="email" placeholder="Enter your email" class="w-full pl-5 pr-5 py-3 rounded-full text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                <button class="bg-orange-500 font-bold text-white rounded-full px-8 py-3 hover:bg-black transition-all flex items-center justify-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-phone"></i> Side to call
+                </button>
+            </div>
 
+            <div class="mt-12 flex justify-center">
+                <img src="./Images/vivo-mobile-phone.png" alt="demo" class="w-full max-w-2xl h-auto drop-shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="rounded-[2rem] px-6 py-12 md:p-16 bg-gradient-to-br from-slate-300 to-teal-500/50">
+            <div class="text-center mb-16">
+                <span class="bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">How it works</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-6">Voice AI That Sounds Natural</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-10">
+                    <div class="flex gap-5">
+                        <div class="flex-shrink-0 bg-orange-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg"><i class="fa-solid fa-microphone-lines text-xl"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Natural Language Understanding</h3>
+                            <p class="text-slate-700 mt-2">Let AI handle customer support and allow your team to focus on high-value tasks.</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="flex justify-center">
+                    <img src="Images/iphones.png" alt="Phone" class="max-w-full h-auto drop-shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="bg-gradient-to-br from-cyan-100 to-teal-400 rounded-[2rem] p-8 md:p-16 border-4 border-white shadow-xl">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold">AI Voice Support <span class="text-orange-600">Without Limits</span></h2>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center font-semibold"><i class="fa-solid fa-circle-check text-orange-500 mr-3 text-xl"></i> 40+ language expansion</li>
+                        <li class="flex items-center font-semibold"><i class="fa-solid fa-circle-check text-orange-500 mr-3 text-xl"></i> Cloud-based scalability</li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="./Images/map-new.png" alt="map" class="w-full h-auto rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold">Designed for Every Industry</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group bg-white p-8 rounded-[2rem] shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 text-center">
+                <div class="text-6xl mb-4 group-hover:scale-110 transition-transform">📞</div>
+                <h3 class="text-xl font-bold mb-2">E-commerce</h3>
+                <p class="text-slate-500 text-sm">Automate outbound calls to reach more customers instantly.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 md:px-8">
+        <div class="bg-slate-900 rounded-[2rem] p-8 md:p-16 text-white text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-10">Flexible Plans</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold">Startups</h3>
+                        <div class="text-4xl font-black my-4">$34<span class="text-sm font-normal">/mo</span></div>
+                        <ul class="text-left space-y-3 text-slate-300 text-sm mb-8">
+                            <li>✓ 100 included minutes</li>
+                            <li>✓ 1 AI Assistant</li>
+                        </ul>
+                    </div>
+                    <button class="w-full py-3 bg-orange-500 rounded-full font-bold hover:bg-white hover:text-black transition-colors">Get Started</button>
+                </div>
+                </div>
+        </div>
+    </section>
+
+</main>
    
 </body>
-</html>
+</html> -->
